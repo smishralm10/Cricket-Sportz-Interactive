@@ -13,6 +13,8 @@
 		E183F8F52B315D1000822AD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183F8F42B315D1000822AD4 /* Preview Assets.xcassets */; };
 		E183F8FD2B31610F00822AD4 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F8FC2B31610F00822AD4 /* WebRepository.swift */; };
 		E183F8FF2B31614F00822AD4 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F8FE2B31614F00822AD4 /* APICall.swift */; };
+		E183F9012B316D3800822AD4 /* MatchWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9002B316D3800822AD4 /* MatchWebRepository.swift */; };
+		E183F9052B316E0F00822AD4 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9042B316E0F00822AD4 /* Match.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E183F8F42B315D1000822AD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E183F8FC2B31610F00822AD4 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
 		E183F8FE2B31614F00822AD4 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		E183F9002B316D3800822AD4 /* MatchWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchWebRepository.swift; sourceTree = "<group>"; };
+		E183F9042B316E0F00822AD4 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 		E183F8EC2B315D1000822AD4 /* Cricket */ = {
 			isa = PBXGroup;
 			children = (
+				E183F9032B316DF600822AD4 /* Models */,
+				E183F9022B316D4F00822AD4 /* Repositories */,
 				E183F8FB2B3160F900822AD4 /* Network */,
 				E183F8ED2B315D1000822AD4 /* CricketApp.swift */,
 				E183F8EF2B315D1000822AD4 /* ContentView.swift */,
@@ -79,6 +85,22 @@
 				E183F8FE2B31614F00822AD4 /* APICall.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		E183F9022B316D4F00822AD4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E183F9002B316D3800822AD4 /* MatchWebRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E183F9032B316DF600822AD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E183F9042B316E0F00822AD4 /* Match.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E183F8F02B315D1000822AD4 /* ContentView.swift in Sources */,
+				E183F9012B316D3800822AD4 /* MatchWebRepository.swift in Sources */,
 				E183F8EE2B315D1000822AD4 /* CricketApp.swift in Sources */,
 				E183F8FF2B31614F00822AD4 /* APICall.swift in Sources */,
 				E183F8FD2B31610F00822AD4 /* WebRepository.swift in Sources */,
+				E183F9052B316E0F00822AD4 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
