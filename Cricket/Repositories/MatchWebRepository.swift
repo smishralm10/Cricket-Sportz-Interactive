@@ -15,7 +15,7 @@ protocol MatchWebRepositoryType: WebRepository {
 struct MatchWebRepository: MatchWebRepositoryType {
     var session: URLSession
     var baseURL: String
-    var bgQueue: DispatchQueue
+    var bgQueue = DispatchQueue(label: "bg_queue")
     
     func loadMatch() -> AnyPublisher<Game, Error> {
         return call(endpoint: API.home)
