@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let container: DIContainer
+    
+    init() {
+        let environment = AppEnvironment.bootstrap()
+        self.container = environment.container
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +23,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .environment(\.injected, container)
     }
 }
 
