@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11FB9DF2B32D67300B1AFDD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11FB9DE2B32D67300B1AFDD /* Helpers.swift */; };
 		E183F8EE2B315D1000822AD4 /* CricketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F8ED2B315D1000822AD4 /* CricketApp.swift */; };
 		E183F8F02B315D1000822AD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F8EF2B315D1000822AD4 /* ContentView.swift */; };
 		E183F8F22B315D1000822AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183F8F12B315D1000822AD4 /* Assets.xcassets */; };
@@ -14,10 +15,16 @@
 		E183F8FD2B31610F00822AD4 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F8FC2B31610F00822AD4 /* WebRepository.swift */; };
 		E183F8FF2B31614F00822AD4 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F8FE2B31614F00822AD4 /* APICall.swift */; };
 		E183F9012B316D3800822AD4 /* MatchWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9002B316D3800822AD4 /* MatchWebRepository.swift */; };
-		E183F9052B316E0F00822AD4 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9042B316E0F00822AD4 /* Match.swift */; };
+		E183F9052B316E0F00822AD4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9042B316E0F00822AD4 /* Game.swift */; };
+		E183F9082B3198C800822AD4 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9072B3198C800822AD4 /* DIContainer.swift */; };
+		E183F90B2B319CCB00822AD4 /* MatchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F90A2B319CCB00822AD4 /* MatchInteractor.swift */; };
+		E183F9102B319FA000822AD4 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F90F2B319FA000822AD4 /* Loadable.swift */; };
+		E183F9122B319FA900822AD4 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9112B319FA900822AD4 /* CancelBag.swift */; };
+		E183F9152B31AAC300822AD4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9142B31AAC300822AD4 /* AppEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E11FB9DE2B32D67300B1AFDD /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		E183F8EA2B315D1000822AD4 /* Cricket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cricket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183F8ED2B315D1000822AD4 /* CricketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketApp.swift; sourceTree = "<group>"; };
 		E183F8EF2B315D1000822AD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,7 +33,12 @@
 		E183F8FC2B31610F00822AD4 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
 		E183F8FE2B31614F00822AD4 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		E183F9002B316D3800822AD4 /* MatchWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchWebRepository.swift; sourceTree = "<group>"; };
-		E183F9042B316E0F00822AD4 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		E183F9042B316E0F00822AD4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E183F9072B3198C800822AD4 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		E183F90A2B319CCB00822AD4 /* MatchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInteractor.swift; sourceTree = "<group>"; };
+		E183F90F2B319FA000822AD4 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		E183F9112B319FA900822AD4 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		E183F9142B31AAC300822AD4 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,11 @@
 		E183F8EC2B315D1000822AD4 /* Cricket */ = {
 			isa = PBXGroup;
 			children = (
+				E1F193992B33531F003237F2 /* UI */,
+				E183F9132B31AAB300822AD4 /* System */,
+				E183F90E2B319F8600822AD4 /* Utilities */,
+				E183F9092B319C8900822AD4 /* Interactors */,
+				E183F9062B3192D600822AD4 /* Injected */,
 				E183F9032B316DF600822AD4 /* Models */,
 				E183F9022B316D4F00822AD4 /* Repositories */,
 				E183F8FB2B3160F900822AD4 /* Network */,
@@ -83,6 +100,7 @@
 			children = (
 				E183F8FC2B31610F00822AD4 /* WebRepository.swift */,
 				E183F8FE2B31614F00822AD4 /* APICall.swift */,
+				E11FB9DE2B32D67300B1AFDD /* Helpers.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -98,9 +116,49 @@
 		E183F9032B316DF600822AD4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E183F9042B316E0F00822AD4 /* Match.swift */,
+				E183F9042B316E0F00822AD4 /* Game.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E183F9062B3192D600822AD4 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				E183F9072B3198C800822AD4 /* DIContainer.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		E183F9092B319C8900822AD4 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				E183F90A2B319CCB00822AD4 /* MatchInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		E183F90E2B319F8600822AD4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E183F90F2B319FA000822AD4 /* Loadable.swift */,
+				E183F9112B319FA900822AD4 /* CancelBag.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E183F9132B31AAB300822AD4 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				E183F9142B31AAC300822AD4 /* AppEnvironment.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		E1F193992B33531F003237F2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,12 +231,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E183F90B2B319CCB00822AD4 /* MatchInteractor.swift in Sources */,
+				E183F9082B3198C800822AD4 /* DIContainer.swift in Sources */,
+				E183F9102B319FA000822AD4 /* Loadable.swift in Sources */,
 				E183F8F02B315D1000822AD4 /* ContentView.swift in Sources */,
 				E183F9012B316D3800822AD4 /* MatchWebRepository.swift in Sources */,
 				E183F8EE2B315D1000822AD4 /* CricketApp.swift in Sources */,
+				E183F9122B319FA900822AD4 /* CancelBag.swift in Sources */,
+				E11FB9DF2B32D67300B1AFDD /* Helpers.swift in Sources */,
 				E183F8FF2B31614F00822AD4 /* APICall.swift in Sources */,
 				E183F8FD2B31610F00822AD4 /* WebRepository.swift in Sources */,
-				E183F9052B316E0F00822AD4 /* Match.swift in Sources */,
+				E183F9052B316E0F00822AD4 /* Game.swift in Sources */,
+				E183F9152B31AAC300822AD4 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +384,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,9 +392,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shreyansh.Cricket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,9 +425,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shreyansh.Cricket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
