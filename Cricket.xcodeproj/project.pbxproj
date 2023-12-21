@@ -21,6 +21,9 @@
 		E183F9102B319FA000822AD4 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F90F2B319FA000822AD4 /* Loadable.swift */; };
 		E183F9122B319FA900822AD4 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9112B319FA900822AD4 /* CancelBag.swift */; };
 		E183F9152B31AAC300822AD4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9142B31AAC300822AD4 /* AppEnvironment.swift */; };
+		E1C217012B33F159004F3741 /* TeamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C217002B33F159004F3741 /* TeamInfo.swift */; };
+		E1F1939D2B335692003237F2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1939C2B335692003237F2 /* Home.swift */; };
+		E1F193A12B335B4B003237F2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F193A02B335B4B003237F2 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		E183F90F2B319FA000822AD4 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		E183F9112B319FA900822AD4 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		E183F9142B31AAC300822AD4 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		E1C217002B33F159004F3741 /* TeamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfo.swift; sourceTree = "<group>"; };
+		E1F1939C2B335692003237F2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E1F193A02B335B4B003237F2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,6 @@
 				E183F9022B316D4F00822AD4 /* Repositories */,
 				E183F8FB2B3160F900822AD4 /* Network */,
 				E183F8ED2B315D1000822AD4 /* CricketApp.swift */,
-				E183F8EF2B315D1000822AD4 /* ContentView.swift */,
 				E183F8F12B315D1000822AD4 /* Assets.xcassets */,
 				E183F8F32B315D1000822AD4 /* Preview Content */,
 			);
@@ -157,8 +162,28 @@
 		E1F193992B33531F003237F2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E1F193A22B335B5E003237F2 /* Screens */,
+				E1F1939F2B335B13003237F2 /* Views */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		E1F1939F2B335B13003237F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1F193A02B335B4B003237F2 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1F193A22B335B5E003237F2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E183F8EF2B315D1000822AD4 /* ContentView.swift */,
+				E1F1939C2B335692003237F2 /* Home.swift */,
+				E1C217002B33F159004F3741 /* TeamInfo.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,10 +262,13 @@
 				E183F8F02B315D1000822AD4 /* ContentView.swift in Sources */,
 				E183F9012B316D3800822AD4 /* MatchWebRepository.swift in Sources */,
 				E183F8EE2B315D1000822AD4 /* CricketApp.swift in Sources */,
+				E1F1939D2B335692003237F2 /* Home.swift in Sources */,
 				E183F9122B319FA900822AD4 /* CancelBag.swift in Sources */,
+				E1C217012B33F159004F3741 /* TeamInfo.swift in Sources */,
 				E11FB9DF2B32D67300B1AFDD /* Helpers.swift in Sources */,
 				E183F8FF2B31614F00822AD4 /* APICall.swift in Sources */,
 				E183F8FD2B31610F00822AD4 /* WebRepository.swift in Sources */,
+				E1F193A12B335B4B003237F2 /* ErrorView.swift in Sources */,
 				E183F9052B316E0F00822AD4 /* Game.swift in Sources */,
 				E183F9152B31AAC300822AD4 /* AppEnvironment.swift in Sources */,
 			);
