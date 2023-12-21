@@ -22,6 +22,7 @@
 		E183F9122B319FA900822AD4 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9112B319FA900822AD4 /* CancelBag.swift */; };
 		E183F9152B31AAC300822AD4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183F9142B31AAC300822AD4 /* AppEnvironment.swift */; };
 		E1C217012B33F159004F3741 /* TeamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C217002B33F159004F3741 /* TeamInfo.swift */; };
+		E1C217032B33FE5F004F3741 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C217022B33FE5F004F3741 /* PopupView.swift */; };
 		E1F1939D2B335692003237F2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1939C2B335692003237F2 /* Home.swift */; };
 		E1F193A12B335B4B003237F2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F193A02B335B4B003237F2 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		E183F9112B319FA900822AD4 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		E183F9142B31AAC300822AD4 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		E1C217002B33F159004F3741 /* TeamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfo.swift; sourceTree = "<group>"; };
+		E1C217022B33FE5F004F3741 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		E1F1939C2B335692003237F2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E1F193A02B335B4B003237F2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				E1F193A02B335B4B003237F2 /* ErrorView.swift */,
+				E1C217022B33FE5F004F3741 /* PopupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				E1F1939D2B335692003237F2 /* Home.swift in Sources */,
 				E183F9122B319FA900822AD4 /* CancelBag.swift in Sources */,
 				E1C217012B33F159004F3741 /* TeamInfo.swift in Sources */,
+				E1C217032B33FE5F004F3741 /* PopupView.swift in Sources */,
 				E11FB9DF2B32D67300B1AFDD /* Helpers.swift in Sources */,
 				E183F8FF2B31614F00822AD4 /* APICall.swift in Sources */,
 				E183F8FD2B31610F00822AD4 /* WebRepository.swift in Sources */,

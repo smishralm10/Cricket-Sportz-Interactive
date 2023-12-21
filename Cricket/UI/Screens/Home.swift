@@ -79,9 +79,10 @@ private extension Home {
             VStack {
                 VStack(spacing: 15) {
                     VStack {
-                        Text(game.matchdetail.match.date)
-                            .font(.caption)
-                        Text(game.matchdetail.match.time)
+                        Text(game.matchdetail.venue.name)
+                            .font(.callout)
+                        let date = DateFormatter.dayAndMonth(from: game.matchdetail.match.date)
+                        Text("\(date) \(game.matchdetail.match.time)")
                             .font(.caption)
                     }
                     
@@ -121,7 +122,7 @@ private extension Home {
                     Text(game.matchdetail.result)
                         .font(.footnote)
                     NavigationLink {
-                        TeamInfo()
+                        TeamInfo(game: game)
                     } label: {
                         Text("Team Info")
                     }
@@ -152,10 +153,16 @@ private extension Home {
 }
 
 extension DateFormatter {
-    static func dayAndMonth(from dateString: String) -> Date? {
+    static func dayAndMonth(from dateString: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/YYYY"
-        return formatter.date(from: dateString)
+        let date = formatter.date(from: dateString)
+        if let date = date {
+            formatter.dateFormat = "dd MMM, YYYY"
+            return formatter.string(from: date)
+        } else {
+            return ""
+        }
     }
 }
 
